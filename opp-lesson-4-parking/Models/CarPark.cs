@@ -8,7 +8,7 @@ namespace opp_lesson_4_parking.Models
 {
    public class CarPark
     {
-        public List<Customer> listOfCustomers = new List<Customer>();
+        private List<Customer> listOfCustomers = new List<Customer>();
 
         public CarParkCharge carParkCharge = new CarParkCharge();
         public CarPark()
@@ -20,6 +20,11 @@ namespace opp_lesson_4_parking.Models
         {
             return "I am the CarPark";
               
+        }
+
+        public void AddCustomer(Customer newCustomer)
+        {
+            listOfCustomers.Add(newCustomer);
         }
 
         public void CalculateCharges()

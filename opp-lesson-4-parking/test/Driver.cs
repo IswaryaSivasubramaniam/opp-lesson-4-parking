@@ -19,11 +19,11 @@ namespace opp_lesson_4_parking.test
             CarPark carpark = new CarPark();
 
 
-            carpark.listOfCustomers.Add(new Customer("a",2));
-            carpark.listOfCustomers.Add(new Customer("b",3));
-            carpark.listOfCustomers.Add(new Customer("c",4));
-            carpark.listOfCustomers.Add(new Customer("d",5));
-            carpark.listOfCustomers.Add(new Customer("e",6));
+            carpark.AddCustomer(new Customer("a",2));
+            carpark.AddCustomer(new Customer("b",3));
+            carpark.AddCustomer(new Customer("c",4));
+            carpark.AddCustomer(new Customer("d",5));
+            carpark.Add(new Customer("e",6));
             carpark.listOfCustomers.Add(new Customer("f",7));
 
             carpark.CalculateCharges();
